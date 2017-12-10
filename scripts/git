@@ -1,0 +1,89 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+function current_git_branch {
+  ref=$(git symbolic-ref HEAD 2> /dev/null)
+  current_branch=${ref#refs/heads/}
+
+  # warn me if not working on master
+  if [[ "${current_branch}" == "master" ]]; then
+    echo "${C_GREEN}${current_branch}${C_RESET}"
+  elif [[ -z "${current_branch}" ]]; then
+    echo "${C_RED}detached${C_RESET}"
+  else
+    echo "${C_YELLOW}${current_branch}${C_RESET}"
+  fi
+}
+
+function minutes_since_last_commit {
+    now=`date +%s`
+    last_commit=$(git log --pretty=format:'%at' -1 2> /dev/null) || return
+    seconds_since_last_commit=$((now-last_commit))
+    minutes_since_last_commit=$((seconds_since_last_commit/60))
+    echo $minutes_since_last_commit
+}
+
+function git_current_author() {
+  author=${GIT_AUTHOR_NAME:-$(git config --get user.name)}
+  [[ ${author} != "Marco Valtas" ]] && echo "${C_YELLOW}A${C_RESET}"
+}
+
+# rendering git prompt if we are in a git repo
+function git_prompt {
+    $(git rev-parse --is-inside-work-tree 2> /dev/null) || return
+
+    extra_info="["
+    extra_info+="$(git_current_author)"
+    extra_info+="]"
+    [[ ${extra_info} == "[]" ]] && extra_info=""
+
+    echo "($(current_git_branch))${extra_info}"
+}
+
+function current_dir_basename() {
+  echo $(basename "${PWD}")
+}
+
+git-update-all() {
+    CUR_DIR=$(pwd)
+
+    echo "Pulling in latest changes for all repositories..."
+
+    # Find all git repositories and update it to the master latest revision
+    for i in $(find . -name ".git" | cut -c 3-); do
+        echo "";
+        echo $i;
+
+        # We have to go to the .git parent directory to call the pull command
+        cd "$i";
+        cd ..;
+
+        git pull;
+
+        cd $CUR_DIR
+    done
+
+    echo "Jobs is done!"
+}
+
+git-author() {
+  args=(${@})
+  case ${1} in
+    set)
+      export GIT_AUTHOR_NAME=${args[@]:1:2}
+      ;;
+    unset)
+      unset GIT_AUTHOR_NAME
+      ;;
+    show|get)
+      echo "Current authors: ${GIT_AUTHOR_NAME:-$(git config --get user.name)}"
+      ;;
+    *)
+      echo "Usage git-author [set AUTHORS|unset|show|get]"
+      git-author show
+      ;;
+  esac
+}
+
+# git configs
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWDIRTYSTATE=1

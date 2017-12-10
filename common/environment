@@ -1,0 +1,19 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+# https://unix.stackexchange.com/questions/4859/visual-vs-editor-whats-the-difference
+export VISUAL=vim
+export EDITOR="$VISUAL"
+export TMPDIR=/tmp
+
+export CLICOLOR=true # enable colors on OSX terminal
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+# Python fails on LC_CTYPE=UTF-8
+export LC_CTYPE=en_US.UTF-8
+
+# use vagrant with virtualbox
+export VAGRANT_DEFAULT_PROVIDER=virtualbox
+
+# Node configurations
+NPM_PACKAGES="~/.npm-packages"
+NODE_PATH="$NPM_PACKAGES/lib/node_modules\:\$NODE_PATH"
