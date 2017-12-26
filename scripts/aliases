@@ -59,13 +59,13 @@ alias glogp='git log --pretty=format:"%h %s" --graph'
 alias gua='git-update-all'
 
  # docker aliases
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; } # list all docker alias
+alias dbt="docker build -t"
 alias di="docker images"
 alias dps="docker ps"
 alias dpl="docker ps -l -q"
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
-# docker functions
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
-dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
-dstop() { docker stop $(docker ps -a -q); }
-drm() { docker rm $(docker ps -a -q); }
-dri() { docker rmi $(docker images -q); }
+alias dstop='function _dstop() { docker stop $(docker ps -a -q); };_stop'
+alias drm='function _drm() { docker rm $(docker ps -a -q); };_drm'
+alias dri='function _dri() { docker rmi $(docker images -q); };_dri'
+alias dbash='function _dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; };_dbash'
