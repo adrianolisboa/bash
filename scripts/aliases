@@ -57,3 +57,15 @@ alias gcot='git checkout -t'
 alias glog='git log'
 alias glogp='git log --pretty=format:"%h %s" --graph'
 alias gua='git-update-all'
+
+ # docker aliases
+alias di="docker images"
+alias dps="docker ps"
+alias dpl="docker ps -l -q"
+alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
+# docker functions
+dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; }
+dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+dstop() { docker stop $(docker ps -a -q); }
+drm() { docker rm $(docker ps -a -q); }
+dri() { docker rmi $(docker images -q); }
