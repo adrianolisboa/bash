@@ -60,7 +60,7 @@ alias gua='git-update-all'
 
  # docker aliases
 dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; } # list all docker alias
-alias dbt="docker build -t"
+alias db="docker build"
 alias di="docker images"
 alias dps="docker ps"
 alias dpl="docker ps -l -q"
