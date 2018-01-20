@@ -1,5 +1,10 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
+# git configs
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PS1='\[\033[01;35m\]\u \[\033[38;5;1m\]\W \[\033[38;5;28m\]$(__git_ps1 "(%s)") \n\[\033[38;5;178m\]»\[\033[0m\] '
+
 function current_git_branch {
   ref=$(git symbolic-ref HEAD 2> /dev/null)
   current_branch=${ref#refs/heads/}
@@ -83,7 +88,3 @@ git-author() {
       ;;
   esac
 }
-
-# git configs
-export GIT_PS1_SHOWCOLORHINTS=1
-export GIT_PS1_SHOWDIRTYSTATE=1
