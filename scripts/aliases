@@ -16,6 +16,7 @@ alias j='jobs'
 alias projects='cd ${HOME}/Projects'
 alias top='htop'
 alias tm='tmux'
+alias ssha='eval "$(ssh-agent -s)"'
 
 # protection from myself
 alias rm='rm -i'
