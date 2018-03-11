@@ -1,4 +1,0 @@
-# vim: ft=sh sw=2 ts=2 expandtab
-
-# turn xv on/off
-xv() { case $- in *[xv]*) set +xv;; *) set -xv ;; esac }
