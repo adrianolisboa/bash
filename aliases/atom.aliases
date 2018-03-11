@@ -1,3 +1,7 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
-alias asp='apm list --installed --bare > ~/.atom/package.list'
+alias a='atom'
+alias ah='atom .'
+alias apmu='apm update --no-confirm'
+alias apmi='apm install'
+alias apmp='apm list --installed --bare > ~/.atom/package.list'
