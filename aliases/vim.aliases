@@ -1,0 +1,4 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+alias fv='vim ${HOME}/.vim/vimrc'
+alias vd='cd ${HOME}/.vim/'
