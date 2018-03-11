@@ -4,34 +4,10 @@
 xv() { case $- in *[xv]*) set +xv;; *) set -xv ;; esac }
 
 # simple aliases
-alias fb='vim ${HOME}/.bash_profile'
-alias sb='source ${HOME}/.bash_profile'
 alias fv='vim ${HOME}/.vim/vimrc'
 alias vd='cd ${HOME}/.vim/'
-alias vb="cd ${BASH_LOAD_ROOT}; v load_bash; cd -; bs;" # edit these conf files
-alias less='less -R' # print raw characters
-alias ll='ls -laF'
-alias ls='ls -F'
-alias j='jobs'
 alias projects='cd ${HOME}/Projects'
-alias top='htop'
 alias tm='tmux'
-alias ssha='eval "$(ssh-agent -s)"'
-
-# protection from myself
-alias rm='rm -i'
-alias mv='mv -i'
-
-# change habits
-alias sudo=safe_sudo
-
-# some cool functions 
-alias epoch='date +"%s"'
-alias version='echo "bash version: ${BASH_VERSION}"'
-alias path='echo -e ${PATH//:/\\n}' # nice path printing
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias fixkb="sudo kextunload -b com.apple.filesystems.smbfs"
 
 # Verify if Brazilian League of Legendes server is online
 alias pinglol="ping 8.23.24.100"
