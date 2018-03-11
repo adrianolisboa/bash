@@ -1,0 +1,3 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+alias pinglol="ping 8.23.24.100"

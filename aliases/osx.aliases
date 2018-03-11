@@ -9,6 +9,7 @@ alias ls='ls -F'
 alias j='jobs'
 alias top='htop'
 alias ssha='eval "$(ssh-agent -s)"'
+alias projects='cd ${HOME}/Projects'
 
 # change habits
 alias sudo=safe_sudo
