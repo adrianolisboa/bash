@@ -1,7 +1,5 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
-dalias() { alias | grep 'docker' | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; } # list all docker alias
-
 alias db="docker build"
 alias di="docker images"
 alias dps="docker ps"

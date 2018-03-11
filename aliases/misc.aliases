@@ -1,3 +1,10 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
+# Directory aliases
+alias ..='cd ..'         # Go up one directory
+alias cd..='cd ..'       # Common misspelling for going up one directory
+alias ...='cd ../..'     # Go up two directories
+alias ....='cd ../../..' # Go up three directories
+
+# Gaming Aliases
 alias pinglol="ping 8.23.24.100"

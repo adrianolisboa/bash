@@ -1,0 +1,6 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+list_aliases() { alias | grep $1 | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/['|\']//g" | sort; } 
+
+alias aliases=list_aliases
+alias al=list_aliases
