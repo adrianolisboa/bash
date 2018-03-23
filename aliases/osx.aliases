@@ -16,6 +16,7 @@ alias sudo=safe_sudo
 
 # protection from myself
 alias rm='rm -i'
+alias rmf='rm -rfi'
 alias mv='mv -i'
 
 # some cool functions 
