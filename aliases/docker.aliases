@@ -9,3 +9,7 @@ alias dstop='function _dstop() { docker stop $(docker ps -a -q); };_dstop'
 alias drm='function _drm() { docker rm $(docker ps -a -q); };_drm'
 alias dri='function _dri() { docker rmi $(docker images -q); };_dri'
 alias dbash='function _dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; };_dbash'
+
+alias dcu='docker-compose up'
+alias dcd='docker-compose down -d'
+alias dcl='docker-compose logs'
