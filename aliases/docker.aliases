@@ -8,7 +8,7 @@ alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dstop='function _dstop() { docker stop $(docker ps -a -q); };_dstop'
 alias drm='function _drm() { docker rm $(docker ps -a -q); };_drm'
 alias dri='function _dri() { docker rmi $(docker images -q); };_dri'
-alias dbash='function _dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; };_dbash'
+alias dbash='function _dbash() { docker exec -it "$1" /bin/bash; };_dbash'
 
 alias dcu='docker-compose up -d'
 alias dcd='docker-compose down'
