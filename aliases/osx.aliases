@@ -26,3 +26,6 @@ alias path='echo -e ${PATH//:/\\n}' # nice path printing
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias fixkb="sudo kextunload -b com.apple.filesystems.smbfs"
+
+# Usefully
+alias envg='env | grep $1'
