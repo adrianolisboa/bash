@@ -6,5 +6,20 @@ alias cd..='cd ..'       # Common misspelling for going up one directory
 alias ...='cd ../..'     # Go up two directories
 alias ....='cd ../../..' # Go up three directories
 
+# change habits
+alias sudo=safe_sudo
+
+# protection from myself
+alias rm='rm -i'
+alias rmf='rm -rfi'
+alias mv='mv -i'
+
 # Gaming Aliases
 alias pinglol="ping 8.23.24.100"
+
+alias epoch='date +"%s"'
+alias version='echo "bash version: ${BASH_VERSION}"'
+alias path='echo -e ${PATH//:/\\n}' # nice path printing
+
+# Usefully
+ alias envg='env | grep $1'  

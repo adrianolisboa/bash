@@ -9,23 +9,9 @@ alias ls='ls -F'
 alias j='jobs'
 alias top='htop'
 alias ssha='eval "$(ssh-agent -s)"'
-alias projects='cd ${HOME}/Projects'
-
-# change habits
-alias sudo=safe_sudo
-
-# protection from myself
-alias rm='rm -i'
-alias rmf='rm -rfi'
-alias mv='mv -i'
 
 # some cool functions 
-alias epoch='date +"%s"'
-alias version='echo "bash version: ${BASH_VERSION}"'
-alias path='echo -e ${PATH//:/\\n}' # nice path printing
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias fixkb="sudo kextunload -b com.apple.filesystems.smbfs"
 
-# Usefully
-alias envg='env | grep $1'
