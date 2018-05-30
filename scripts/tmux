@@ -1,5 +1,0 @@
-# vim: ft=sh sw=2 ts=2 expandtab
-
-#if command -v tmux>/dev/null; then
-#  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-#fi
