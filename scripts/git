@@ -66,7 +66,7 @@ function current_dir_basename() {
   echo $(basename "${PWD}")
 }
 
-git-update-all() {
+function git_update_all() {
     CUR_DIR=$(pwd)
 
     echo "Pulling in latest changes for all repositories..."
