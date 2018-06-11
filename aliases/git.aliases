@@ -1,5 +1,6 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
+alias g='git'
 alias gst='git status -s -b'
 alias gcl='git clone'
 alias gl='git pull'
