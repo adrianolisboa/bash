@@ -5,11 +5,14 @@ alias di="docker images"
 alias dp="docker push"
 alias dps="docker ps"
 alias dpl="docker ps -l -q"
+alias dsp="docker system prune"
 alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dstop='function _dstop() { docker stop $(docker ps -a -q); };_dstop'
 alias drm='function _drm() { docker rm $(docker ps -a -q); };_drm'
 alias dri='function _dri() { docker rmi $(docker images -q); };_dri'
 alias dbash='function _dbash() { docker exec -it "$1" /bin/bash; };_dbash'
+alias dr='function _drun() { docker run -it "$1" /bin/bash; };_drun'
+alias drr='function _drunroot() { docker run -it -u 0 "$1" /bin/bash; };_drunroot'
 
 alias dcu='docker-compose up -d'
 alias dcd='docker-compose down'
