@@ -2,3 +2,4 @@
 
 alias fvim='vim ${HOME}/.vim/vimrc'
 alias vimdir='cd ${HOME}/.vim/'
+alias diff='vimdiff'
