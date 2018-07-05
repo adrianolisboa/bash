@@ -3,7 +3,6 @@
 # git configs
 export GIT_PS1_SHOWCOLORHINTS=1
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='\[\033[01;35m\]\u \[\033[38;5;1m\]\W \[\033[38;5;28m\]$(__git_ps1 "(%s)") \n\[\033[38;5;178m\]»\[\033[0m\] '
 
 function delete_local_merged_branches() {
   git branch --merged master | grep -v master | xargs git branch -d
