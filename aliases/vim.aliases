@@ -1,5 +1,6 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
+alias v='vim'
 alias fvim='vim ${HOME}/.vim/vimrc'
 alias vimdir='cd ${HOME}/.vim/'
 alias diff='vimdiff'
