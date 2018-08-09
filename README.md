@@ -1,3 +1,5 @@
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/adrianolisboa)
+
 ## Bash Configurations
 
 Some bash functions and configurations used daily on my shell interactions.
