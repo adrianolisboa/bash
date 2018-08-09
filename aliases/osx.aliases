@@ -9,6 +9,8 @@ alias ll='ls -laF'
 alias ls='ls -F'
 alias j='jobs'
 alias top='htop'
+alias about='neofetch'
+alias sys='neofetch'
 alias ssha='eval "$(ssh-agent -s)"'
 
 # some cool functions 
