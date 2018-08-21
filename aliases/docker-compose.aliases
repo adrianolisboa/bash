@@ -1,0 +1,7 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+alias dcu='docker-compose up -d'
+alias dcd='docker-compose down'
+alias dcl='docker-compose logs  '
+alias dcl='function _dclogs() { docker-compose logs —tail 1000 -f "$1"; };_dclogs'
+alias dcp='docker-compose pull'
