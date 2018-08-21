@@ -13,8 +13,3 @@ alias dri='function _dri() { docker rmi $(docker images -q); };_dri'
 alias dbash='function _dbash() { docker exec -it "$1" /bin/bash; };_dbash'
 alias dr='function _drun() { docker run -it "$1" /bin/bash; };_drun'
 alias drr='function _drunroot() { docker run -it -u 0 "$1" /bin/bash; };_drunroot'
-
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
-alias dcl='docker-compose logs'
-alias dcp='docker-compose pull'
