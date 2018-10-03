@@ -2,7 +2,7 @@
 
 alias focus='open focus://focus'
 alias focusfor='function _focusfor() { open focus://focus?minutes="$1"; };_focusfor'
-alias breakfor='function _breakfor() { open focus://break?minutes="$1"; };_breakfor'
+alias takebreakfor='function _breakfor() { open focus://break?minutes="$1"; };_breakfor'
 alias unfocus='open focus://unfocus'
 alias unbreak='open focus://unbreak'
 alias togglefocus='open focus://toggle'
