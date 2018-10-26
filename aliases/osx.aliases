@@ -13,7 +13,7 @@ alias about='neofetch'
 alias sys='neofetch'
 alias ssha='eval "$(ssh-agent -s)"'
 alias desktop='cd $HOME/Desktop'
-alias mkdir='mkd'
+alias mkd='mkd'
 alias envdir='cd ${HOME}/.env-setup'
 
 # some cool functions 
