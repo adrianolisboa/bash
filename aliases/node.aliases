@@ -1,6 +1,7 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
 alias ni="npm install"
+alias nit="npm init -y"
 alias nis="npm install --save"
 alias nid="npm install --save-dev"
 alias nig="npm install -g"
