@@ -4,3 +4,16 @@ list_aliases() { alias | grep $1 | sed "s/^\([^=]*\)=\(.*\)/\1 => \2/"| sed "s/[
 
 alias aliases=list_aliases
 alias al=list_aliases
+
+# This confirm function could be used within any alias
+confirm() {
+  read -r -p "${1:-Are you sure? [y/N]} " response
+  case "$response" in
+      [yY][eE][sS]|[yY])
+          true
+          ;;
+      *)
+          false
+          ;;
+  esac
+}
