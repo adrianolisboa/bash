@@ -6,16 +6,18 @@ alias envdir='cd ${HOME}/.env-setup' # https://github.com/adrianolisboa/env-setu
 alias bashdir='cd ${BASH_LOAD_ROOT}' # Those files
 
 function update_machine() {
-  vimdir && gl && vim +PackClean +PackUpdate +q # Update vim repository and install new plugins (if exists)
-  bashdir && gl # Update bash repository and source files
-  sb # source files
+    vimdir && gl && vim +PackClean +PackUpdate +q # Update vim repository and install new plugins (if exists)
+    bashdir && gl # Update bash repository and source files
+    sb # source files
+    cd
 }
 
 function update_osx() {
-  update_machine
-  envdir && gl && cd setup-osx && confirm && brew update && brew bundle # Update environment setup
-  sb # source files
+    update_machine
+    envdir && gl && cd setup-osx && confirm 'Do you want to update brew dependencies?' && brew update && brew bundle # Update environment setup
+    sb # source files
+    cd
 }
 
-alias uma='update_machine'
-alias uos='update_osx'
+alias uma='update_machine' # This only updates essential
+alias uos='update_osx'     # Updates essentials also brew files
