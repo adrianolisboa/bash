@@ -3,6 +3,7 @@
 alias dco='docker-compose'
 alias dcu='docker-compose up -d'
 alias dcd='docker-compose down'
-alias dcl='docker-compose logs  '
+alias dcl='docker-compose logs'
+alias dcr='docker-compose run'
 alias dcl='function _dclogs() { docker-compose logs -f "$1" -tail 1000;  };_dclogs'
 alias dcp='docker-compose pull'
