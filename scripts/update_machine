@@ -10,6 +10,7 @@ function update_machine() {
     bashdir && gl # Update bash repository and source files
     sb # source files
     cd
+    print_jobs_done
 }
 
 function update_osx() {
@@ -17,6 +18,11 @@ function update_osx() {
     envdir && gl && cd setup-osx && confirm 'Do you want to update brew dependencies?' && brew update && brew bundle # Update environment setup
     sb # source files
     cd
+    print_jobs_done
+}
+
+function print_jobs_done() {
+    echo "Jobs done! ;)"
 }
 
 alias uma='update_machine' # This only updates essential
