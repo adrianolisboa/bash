@@ -7,7 +7,8 @@ alias al=list_aliases
 
 # This confirm function could be used within any alias
 confirm() {
-  read -r -p "${1:-Are you sure? [y/N]} " response
+  confirmation_phrase=${1:-'Are you sure?'}
+  read -r -p "${2:-$confirmation_phrase [y/N]} " response
   case "$response" in
       [yY][eE][sS]|[yY])
           true
