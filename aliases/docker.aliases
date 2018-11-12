@@ -1,6 +1,6 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
-alias db="docker build"
+alias db="docker build ."
 alias di="docker images"
 alias dp="docker push"
 alias dps="docker ps"
