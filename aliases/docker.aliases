@@ -10,6 +10,7 @@ alias dip="docker inspect --format '{{ .NetworkSettings.IPAddress }}'"
 alias dstop='function _dstop() { docker stop $(docker ps -a -q); };_dstop'
 alias drma='function _drm() { docker rm $(docker ps -a -q); };_drm'
 alias drai='function _drai() { docker rmi $(docker images -q); };_drai'
+alias draif='function _drai() { docker rmi $(docker images -q) --force; };_drai'
 alias dri='function _dri() { docker rmi "$1"; };_dri'
 alias drif='function _drif() { docker rmi "$1" --force; };_drif'
 alias dbash='function _dbash() { docker exec -it "$1" /bin/bash; };_dbash'
