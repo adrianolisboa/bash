@@ -9,3 +9,4 @@
 #   -X (-X or --no-init) Disable termcap init & deinit
 
 alias ag='ag --smart-case --pager="less -MIRFX"'
+alias agi='ag --ignore dist/ --smart-case --pager="less -MIRFX"'
