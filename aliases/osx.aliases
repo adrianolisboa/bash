@@ -1,9 +1,14 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
+# Directional
+alias desktop='cd $HOME/Desktop'
+alias dropbox='open $HOME/Dropbox'
+alias books='open $HOME/Dropbox/Books'
+
 alias fb='vim ${HOME}/.bash_profile'
 alias sb='source ${HOME}/.bash_profile'
 alias fe='vim ${HOME}/.env-setup'
-alias vb="cd ${BASH_LOAD_ROOT}; v load_bash; cd -; bs;" # edit these conf files
+alias vb="cd ${BASH_LOAD_ROOT}; v load_bash; cd -;" # edit these conf files
 alias less='less -R' # print raw characters
 alias ll='ls -laF'
 alias ls='ls -F'
@@ -12,7 +17,6 @@ alias top='htop'
 alias about='neofetch'
 alias sys='neofetch'
 alias ssha='eval "$(ssh-agent -s)"'
-alias desktop='cd $HOME/Desktop'
 alias mkd='mkd'
 
 # some cool functions 
