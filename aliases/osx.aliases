@@ -2,6 +2,7 @@
 
 # Directional
 alias desktop='cd $HOME/Desktop'
+alias opendesktop='open $HOME/Desktop'
 alias dropbox='open $HOME/Dropbox'
 alias books='open $HOME/Dropbox/Books'
 
