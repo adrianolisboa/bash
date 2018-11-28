@@ -26,3 +26,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias fixkb="sudo kextunload -b com.apple.filesystems.smbfs"
 
+# Lunchctl
+alias listagents="sudo launchctl list"
+alias listnotappleagents="sudo launchctl list  | grep -v apple"
+alias removeagent="sudo launchctl remove"
