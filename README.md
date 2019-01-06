@@ -9,9 +9,9 @@ Some bash functions and configurations used daily on my shell interactions.
 To use add to your __.bash_profile__ this:
 
 		BASH_LOAD_ROOT=/path/to/where/bash/project/is
-		. ${BASH_LOAD_ROOT}/load_bash
+		. ${BASH_LOAD_ROOT}/load
 
-Than `load_bash` takes care of loading all functions, aliases and etc. Every directory defined in  `load_bash` will be sourced recursively.
+Than `load` takes care of loading all functions, aliases and etc. Every directory defined in  `load` will be sourced recursively.
 
 ### Credits
 
