@@ -11,7 +11,7 @@ To use add to your __.bash_profile__ this:
 		BASH_LOAD_ROOT=/path/to/where/bash/project/is
 		. ${BASH_LOAD_ROOT}/load_bash
 
-Than `load_bash` takes care of loading all scripts, aliases and etc. Every directory defined in  `load_bash` will be sourced recursively.
+Than `load_bash` takes care of loading all functions, aliases and etc. Every directory defined in  `load_bash` will be sourced recursively.
 
 ### Credits
 
