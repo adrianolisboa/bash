@@ -4,6 +4,21 @@
 export GIT_PS1_SHOWCOLORHINTS=1
 export GIT_PS1_SHOWDIRTYSTATE=1
 
+# fuzzy commit selecting
+# Thanks to: https://github.com/christoomey/dotfiles/blob/77fb4084bd3f207aace80aa93a49769a6a298ddb/bin/git-shalector
+function git-shalector() {
+  target_commit=$(
+    git log -75 --oneline --decorate --graph --all --color=always | \
+    fzf --ansi --no-sort --reverse --tiebreak=index | \
+    sed -E 's/.* ([0-9a-f]{7}) .*/\1/' | \
+    tr -d '\n'
+  )
+
+  printf "%s" "$target_commit" | pbcopy
+
+  echo "Commit hash copied ($target_commit)"
+}
+
 function delete_local_merged_branches() {
   git branch --merged master | grep -v master | xargs git branch -d
 }
