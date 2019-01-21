@@ -21,3 +21,4 @@ alias path='echo -e ${PATH//:/\\n}' # nice path printing
 # Usefully
 alias envg='env | grep $1'
 alias cat='bat --paging=never --style=plain'
+alias psg="ps auxwww | head -n 1 ; ps auxwww | grep -Ei"
