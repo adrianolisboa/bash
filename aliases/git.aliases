@@ -10,6 +10,7 @@ alias glr='git pull --rebase'
 alias gp='git push'
 alias gpf='confirm && git push --force-with-lease' # https://developer.atlassian.com/blog/2015/04/force-with-lease/
 alias gpp='git push --set-upstream origin master'
+alias gpt='git push --tags'
 alias gd='git diff'
 alias gdiff='git diff'
 alias gs='git show'
@@ -36,6 +37,7 @@ alias gmslc='minutes_since_last_commit'
 alias gstash='git stash'
 alias gstashp='git stash pop'
 alias gsha='git-shalector'
+alias gprntags='git fetch origin --prune --tags'
 
 git_push_set_upstream() { git push --set-upstream origin $(git branch | awk '/^\* / { print $2 }'); }
 alias gpo=git_push_set_upstream
