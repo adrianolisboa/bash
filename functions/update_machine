@@ -1,10 +1,5 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
-# Local repositories should be defined here
-alias vimdir='cd ${HOME}/.vim/' # https://github.com/adrianolisboa/vim
-alias bashdir='cd ${BASH_LOAD_ROOT}' # Those files
-alias envdir='cd ${BASH_LOAD_ROOT}/osx-setup'
-
 function update_machine() {
     vimdir && git pull && vim +PackClean +PackUpdate +q # Update vim repository and install new plugins (if exists)
     bashdir && git pull # Update bash repository and source files

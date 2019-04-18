@@ -7,6 +7,12 @@ alias finder='opendesktop'
 alias dropbox='open $HOME/Dropbox'
 alias books='open $HOME/Dropbox/Books'
 
+# Local repositories should be defined here
+alias vimdir='cd ${HOME}/.vim/' # https://github.com/adrianolisboa/vim
+alias dotfiles='cd ${HOME}/dotfiles' # https://github.com/adrianolisboa/dotfiles
+alias bashdir='cd ${BASH_LOAD_ROOT}' # Those files
+alias envdir='cd ${BASH_LOAD_ROOT}/osx-setup'
+
 alias fb='vim ${HOME}/.bash_profile'
 alias sb='source ${HOME}/.bash_profile'
 alias vb="cd ${BASH_LOAD_ROOT}; v load; cd -;" # edit these conf files
