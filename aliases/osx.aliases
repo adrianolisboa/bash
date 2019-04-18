@@ -9,7 +9,6 @@ alias books='open $HOME/Dropbox/Books'
 
 alias fb='vim ${HOME}/.bash_profile'
 alias sb='source ${HOME}/.bash_profile'
-alias fe='vim ${HOME}/.env-setup'
 alias vb="cd ${BASH_LOAD_ROOT}; v load; cd -;" # edit these conf files
 alias less='less -R' # print raw characters
 alias ll='ls -laF'

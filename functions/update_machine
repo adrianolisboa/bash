@@ -2,8 +2,8 @@
 
 # Local repositories should be defined here
 alias vimdir='cd ${HOME}/.vim/' # https://github.com/adrianolisboa/vim
-alias envdir='cd ${HOME}/.env-setup' # https://github.com/adrianolisboa/env-setup
 alias bashdir='cd ${BASH_LOAD_ROOT}' # Those files
+alias envdir='cd ${BASH_LOAD_ROOT}/osx-setup'
 
 function update_machine() {
     vimdir && git pull && vim +PackClean +PackUpdate +q # Update vim repository and install new plugins (if exists)
@@ -15,7 +15,7 @@ function update_machine() {
 
 function update_osx() {
     update_machine
-    envdir && git pull && cd setup-osx && confirm 'Do you want to update brew dependencies?' && brew update && brew bundle # Update environment setup
+    envdir && git pull && confirm 'Do you want to update brew dependencies?' && brew update && brew bundle # Update environment setup
     cd
     print_jobs_done
 }
