@@ -2,9 +2,9 @@
 
 ## Bash Configurations
 
-Some bash functions and configurations used daily on my shell interactions.
+My OSX setup, some bash functions and configurations used daily on my shell interactions.
 
-### How to load it?
+### How to Load It?
 
 To use add to your __.bash_profile__ this:
 
@@ -12,6 +12,10 @@ To use add to your __.bash_profile__ this:
 		. ${BASH_LOAD_ROOT}/load
 
 Than `load` takes care of loading all functions, aliases and etc. Every directory defined in  `load` will be sourced recursively.
+
+## OSX Setup
+
+Just `cd` into osx-setup folder and run `./setup.sh`
 
 ### Credits
 
