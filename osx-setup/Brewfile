@@ -29,6 +29,7 @@ brew "wifi-password"
 brew "httpie"
 brew "thefuck"
 brew "tmux"
+brew "stow"
 
 cask "macdown"
 cask "google-chrome"
