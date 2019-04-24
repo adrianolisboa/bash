@@ -37,6 +37,7 @@ alias gstash='git stash -u'
 alias gstashp='git stash pop'
 alias gsha='git-shalector'
 alias gprntags='git fetch origin --prune --tags'
+alias gundocommit='git reset --soft HEAD^'
 
 git_push_set_upstream() { git push --set-upstream origin $(git branch | awk '/^\* / { print $2 }'); }
 alias gpo=git_push_set_upstream
