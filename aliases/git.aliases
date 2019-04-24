@@ -27,7 +27,7 @@ alias gcob='git checkout -b'
 alias gcot='git checkout -t'
 alias gcle='git clean -df'
 alias glog='git log --oneline --decorate --graph --all -30'
-alias gslog='git shortlog'
+alias glonglog="git log --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%ar%C(reset)] %s'"
 alias gua='git_update_all'
 alias gdlmb='delete_local_merged_branches'
 alias gdrmb='delete_remote_merged_branches'
