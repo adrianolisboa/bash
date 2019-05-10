@@ -32,7 +32,5 @@ brew "tmux"
 brew "stow"
 
 cask "macdown"
-cask "google-chrome"
-cask "firefox"
 cask "dropbox"
 cask "keybase"
