@@ -1,0 +1,7 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+alias kub='kubectl'
+alias kubgn='kubectl get nodes'
+
+alias mkub='minikube'
+alias mkubst='minikube start'
