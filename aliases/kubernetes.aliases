@@ -2,6 +2,9 @@
 
 alias kub='kubectl'
 alias kubgn='kubectl get nodes'
+alias kubgp='kubectl get pods'
+alias kublogs='kubectl logs'
 
 alias mkub='minikube'
-alias mkubst='minikube start'
+alias mkubs='minikube start'
+alias mkubd='minikube dashboard'
