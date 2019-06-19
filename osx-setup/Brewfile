@@ -30,6 +30,7 @@ brew "httpie"
 brew "thefuck"
 brew "tmux"
 brew "stow"
+brew "prettyping"
 
 cask "macdown"
 cask "dropbox"
