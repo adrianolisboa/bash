@@ -23,3 +23,4 @@ alias envg='env | grep $1'
 alias cat='bat --paging=never --style=plain'
 alias psg="ps auxwww | head -n 1 ; ps auxwww | grep -Ei"
 alias ping='prettyping --nolegend'
+alias help='tldr'
