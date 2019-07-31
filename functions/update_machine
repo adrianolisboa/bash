@@ -1,6 +1,7 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
 function update_machine() {
+    sb
     vimdir && git pull && vim +PackClean +PackUpdate +q # Update vim repository and install new plugins (if exists)
     bashdir && git pull # Update bash repository and source files
     source ${HOME}/.bash_profile
