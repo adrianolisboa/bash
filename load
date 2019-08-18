@@ -8,6 +8,6 @@ source_files() {
   fi
 }
 
+source_files ${BASH_LOAD_ROOT}/aliases
 source_files ${BASH_LOAD_ROOT}/common
 source_files ${BASH_LOAD_ROOT}/functions
-source_files ${BASH_LOAD_ROOT}/aliases
