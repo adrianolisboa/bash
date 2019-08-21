@@ -10,4 +10,4 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export PS1='\[\033[01;35m\]\u \[\033[38;5;1m\]\W\[\033[38;5;28m\]$(__git_ps1 " (%s)") \n\[\033[38;5;178m\]»\[\033[0m\] '
 
-export CDPATH=$HOME:$HOME/Projects
+export CDPATH=$HOME
