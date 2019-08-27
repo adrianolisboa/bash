@@ -1,0 +1,5 @@
+# vim: ft=sh sw=2 ts=2 expandtab
+
+alias elixirdocs='open https://elixir-lang.org/docs.html'
+alias rubydocs='open https://ruby-doc.org/'
+alias flutterdocs='open https://flutter.dev/docs'
