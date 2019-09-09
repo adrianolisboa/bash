@@ -4,3 +4,5 @@ alias mxt="mix test"
 alias mxtc="mix test --cover"
 alias mxdg="mix deps.get"
 alias mxdc="mix docs"
+
+alias iexm="iex -S mix"
