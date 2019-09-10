@@ -32,6 +32,7 @@ brew "tmux"
 brew "stow"
 brew "prettyping"
 brew "fzf"
+brew "autojump"
 
 cask "macdown"
 cask "dropbox"
