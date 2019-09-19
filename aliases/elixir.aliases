@@ -1,8 +1,8 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
-alias mxt="mix test"
-alias mxtc="mix test --cover"
-alias mxdg="mix deps.get"
-alias mxdc="mix docs"
+alias mixt="mix test"
+alias mixtc="mix test --cover"
+alias mixdg="mix deps.get"
+alias mixdc="mix docs"
 
 alias iexm="iex -S mix"
