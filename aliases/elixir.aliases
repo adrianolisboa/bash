@@ -2,6 +2,7 @@
 
 alias mixt="mix test"
 alias mixc="mix compile"
+alias mixr="mix run -e"
 alias mixtc="mix test --cover"
 alias mixdg="mix deps.get"
 alias mixdc="mix docs"
