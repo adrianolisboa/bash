@@ -1,6 +1,7 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
 alias mixt="mix test"
+alias mixc="mix compile"
 alias mixtc="mix test --cover"
 alias mixdg="mix deps.get"
 alias mixdc="mix docs"
