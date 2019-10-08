@@ -1,9 +1,11 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
 alias mixt="mix test"
-alias mixc="mix compile"
 alias mixr="mix run -e"
 alias mixtc="mix test --cover"
+alias mixco="mix compile"
+alias mixcl="mix clean"
+alias mixclco="mix do clean compile"
 alias mixdg="mix deps.get"
 alias mixdc="mix docs"
 
