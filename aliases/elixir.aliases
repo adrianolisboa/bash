@@ -1,5 +1,6 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
+# mix
 alias mixt="mix test"
 alias mixr="mix run -e"
 alias mixtc="mix test --cover"
@@ -9,4 +10,8 @@ alias mixclco="mix do clean compile"
 alias mixdg="mix deps.get"
 alias mixdc="mix docs"
 
+# phoenix
+alias mixphx="mix phx.server"
+
+# iex
 alias iexm="iex -S mix"
