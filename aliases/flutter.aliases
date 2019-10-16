@@ -2,5 +2,8 @@
 
 alias fl="flutter"
 alias flr="flutter run"
+alias flt="flutter test"
+alias fltc="flutter test --coverage"
+alias flpg="flutter pub get"
 alias flup="flutter upgrade"
 alias fld="flutter doctor -v"
