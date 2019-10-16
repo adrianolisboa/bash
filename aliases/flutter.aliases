@@ -1,5 +1,6 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
 alias fl="flutter"
+alias flr="flutter run"
 alias flup="flutter upgrade"
 alias fld="flutter doctor -v"
