@@ -33,6 +33,7 @@ alias glonglog="git log --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%
 alias gua='git_update_all'
 alias gdlmb='delete_local_merged_branches'
 alias gdrmb='delete_remote_merged_branches'
+alias gdfig='delete_files_in_gitignore'
 alias gat='git-author'
 alias gmslc='minutes_since_last_commit'
 alias gstash='git stash -u'
