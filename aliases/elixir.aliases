@@ -2,6 +2,7 @@
 
 # mix
 alias mixt="mix test"
+alias mixc="mix credo --strict"
 alias mixr="mix run -e"
 alias mixtc="mix test --cover"
 alias mixco="mix compile"
