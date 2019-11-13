@@ -7,6 +7,7 @@ alias gclo='git clone'
 alias gl='git pull'
 alias gf='git fetch'
 alias glr='git pull --rebase'
+alias grm='git rebase master'
 alias gp='git push'
 alias gr='git revert'
 alias gpf='confirm && git push --force-with-lease' # https://developer.atlassian.com/blog/2015/04/force-with-lease/
