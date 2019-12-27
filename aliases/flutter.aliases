@@ -2,6 +2,7 @@
 
 alias fl="flutter"
 alias flr="flutter run"
+alias flra="flutter run -d all"
 alias flt="flutter test"
 alias fla="flutter analyze"
 alias flcl="flutter clean"
