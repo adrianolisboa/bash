@@ -29,6 +29,7 @@ alias gcam='git commit --amend'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gco='git checkout'
+alias gcom='git checkout master'
 alias gcob="git checkout \$(git branch -a | sed 's/remotes\/origin\///' | grep -v '\*|HEAD' | sort |uniq | fzf --select-1)"
 alias gcot='git checkout -t'
 alias gcle='git clean -df'
