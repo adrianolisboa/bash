@@ -1,10 +1,11 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
-alias kub='kubectl'
-alias kubgn='kubectl get nodes'
-alias kubgp='kubectl get pods'
-alias kublogs='kubectl logs'
+alias kcl='kubectl'
+alias kclgn='kubectl get nodes'
+alias kclgp='kubectl get pods'
+alias kclgs='kubectl get services'
+alias kcll='kubectl logs'
 
-alias mkub='minikube'
-alias mkubs='minikube start'
-alias mkubd='minikube dashboard'
+alias mk='minikube'
+alias mks='minikube start'
+alias mkd='minikube dashboard'
