@@ -16,3 +16,11 @@ alias mixphx="mix phx.server"
 
 # iex
 alias iexm="iex -S mix"
+
+# gigalixir
+alias giga="gigalixir"
+alias gigar="gigalixir run"
+alias gigaa="gigalixir apps"
+alias gigal="gigalixir logs"
+alias gigaps="gigalixir ps"
+alias gigaseeds="gigalixir run -- mix run priv/repo/seeds.exs"
