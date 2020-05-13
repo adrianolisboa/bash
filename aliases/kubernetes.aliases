@@ -7,6 +7,7 @@ alias klgs='kubectl get services'
 alias klgd='kubectl get deployments'
 alias klgn='kubectl get namespaces'
 alias kll='kubectl logs'
+alias klp='kubectl proxy'
 
 alias mk='minikube'
 alias mks='minikube start'
