@@ -3,7 +3,7 @@
 # https://unix.stackexchange.com/questions/4859/visual-vs-editor-whats-the-difference
 export VISUAL=vim
 export EDITOR="$VISUAL"
-export TMPDIR=/tmp
+#export TMPDIR=/tmp
 
 export CLICOLOR=true # enable colors on OSX terminal
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
