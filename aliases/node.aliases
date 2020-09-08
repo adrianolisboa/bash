@@ -1,3 +1,6 @@
 # vim: ft=sh sw=2 ts=2 expandtab
 
 alias nodedocs='open https://nodejs.org/dist/latest/docs/api/'
+
+# NPM
+alias npmi='npm install'
