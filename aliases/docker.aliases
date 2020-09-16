@@ -14,6 +14,7 @@ alias draif='function _drai() { docker rmi $(docker images -q) --force; };_drai'
 alias dri='function _dri() { docker rmi "$1"; };_dri'
 alias drif='function _drif() { docker rmi "$1" --force; };_drif'
 alias dbash='function _dbash() { docker exec -it "$1" /bin/bash; };_dbash'
+alias dash='function _dash() { docker exec -it "$1" /bin/ash; };_dash'
 alias dr='function _drun() { docker run -it "$1" /bin/bash; };_drun'
 alias drr='function _drunroot() { docker run -it -u 0 "$1" /bin/bash; };_drunroot'
 
