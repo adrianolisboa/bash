@@ -18,6 +18,9 @@ export HISTIGNORE="clear:bg:fg:exit:* --help"
 # lines.
 export PROMPT_COMMAND='history -a'
 
+# Enable Erlang Shell History
+export ERL_AFLAGS="-kernel shell_history enabled -kernel shell_history_file_bytes 2097152"
+
 shopt -s histappend # always append to history
 
 alias hh='echo "Refresing history"; history -a; history -n'
