@@ -9,6 +9,7 @@ alias mixco="mix compile"
 alias mixcl="mix clean"
 alias mixclco="mix do clean compile"
 alias mixdg="mix deps.get"
+alias mixes="mix ecto.setup"
 alias mixdc="mix docs"
 alias mixes='mix format && mix format --check-formatted && mix test && mix credo --strict && mix coveralls -u' # thanks @brosquinha
 
