@@ -12,6 +12,7 @@ alias mixdg="mix deps.get"
 alias mixes="mix ecto.setup"
 alias mixdc="mix docs"
 alias mixes='mix format && mix format --check-formatted && mix test && mix credo --strict && mix coveralls -u' # thanks @brosquinha
+alias mmig='mix ecto.migrate && MIX_ENV=test mix ecto.migrate'
 
 # phoenix
 alias mixphx="mix phx.server"
