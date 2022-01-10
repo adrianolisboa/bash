@@ -29,5 +29,6 @@ brew "stow"
 brew "prettyping"
 brew "fzf"
 brew "autojump"
+brew "reattach-to-user-namespace"
 
 cask "macdown"
