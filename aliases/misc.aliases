@@ -25,3 +25,5 @@ alias psg="ps auxwww | head -n 1 ; ps auxwww | grep -Ei"
 alias ping='prettyping --nolegend'
 alias help='tldr'
 alias macversion='sw_vers'
+
+alias jsonv='python -m json.tool '
