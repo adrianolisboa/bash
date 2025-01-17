@@ -15,7 +15,7 @@ alias mixes='mix format && mix format --check-formatted && mix test && mix credo
 alias mmig='mix ecto.migrate && MIX_ENV=test mix ecto.migrate'
 
 # phoenix
-alias mixphx="mix phx.server"
+alias mixphx="iex -S mix phx.server"
 
 # iex
 alias iexm="iex -S mix"

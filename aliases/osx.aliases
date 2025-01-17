@@ -9,6 +9,7 @@ alias books='open $HOME/Dropbox/Books'
 
 # Local repositories should be defined here
 alias vimdir='cd ${HOME}/.vim/' # https://github.com/adrianolisboa/vim
+alias nvimdir='cd ${HOME}/.config/nvim' # https://github.com/adrianolisboa/dots.nvim
 alias dotfiles='cd ${HOME}/dotfiles' # https://github.com/adrianolisboa/dotfiles
 alias bashdir='cd ${BASH_LOAD_ROOT}' # Those files
 alias envdir='cd ${BASH_LOAD_ROOT}/osx-setup'
